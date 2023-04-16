@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dados de Pesquisa</title>
+</head>
+<body>
+
+	<h1>Dados para Pesquisas</h1>
+	<form action="/projeto_pesquisa/PesquisaInclusaoServlet" method="post">
+	
+		<p>Nome: <input type="text" name="p_nome" size="30" /></p>
+		<p>Email:  <input type="email" name="p_email" size="30" /></p>
+		
+		<p>Sexo:</p>
+		<p>Masculino  <input type="radio" name="p_sexo" value="masculino" /></p>
+		<p>Feminino  <input type="radio" name="p_sexo" value="feminino" /></p>
+		
+		<p>Tipos preferidos de filmes:</p>
+		<p><input type="checkbox" name="p_ck1" value="romance" />Romance</p>
+		<p><input type="checkbox" name="p_ck2" value="aventura" />Aventura</p>
+		<p><input type="checkbox" name="p_ck3" value="Ficção" />Ficção</p>
+		
+		<p>Tipos preferidos de filmes:</p>
+		<select name="p_estadoCivil">
+			<option selected="selected" disabled>Selecione aqui</option>
+			<option value="solteiro(a)">Solteiro(a)</option>
+			<option value="casado(a)">Casado(a)</option>
+			<option value="Viuvo(a)">Viuvo(a)</option>
+		</select>
+		
+		<p>
+			<input type="submit" value="Enviar" />
+			<input type="reset" value="Limpar" />
+		</p>
+		
+	</form>
+
+</body>
+</html>
